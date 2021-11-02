@@ -8,6 +8,7 @@ public class TaskC {
 
     public static void main(String[] args) {
         step2();
+        System.out.println();
         step1();
     }
 

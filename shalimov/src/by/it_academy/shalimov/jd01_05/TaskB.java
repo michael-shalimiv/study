@@ -23,9 +23,9 @@ double sum = 0;
     static void step2() {
         for (double x = -5.5D; x < 2.0D; x += 0.5D) {
             if (x / 2.0D > -2.0D && x / 2.0D <= -1.0D) {
-                System.out.printf("При x/2=%.2f a = %e%n",x/2,Math.log10(Math.abs(Math.sin(Math.pow(x, 2.0D))) + 2.74D));
+                System.out.printf("При x/2=%.2f a = %e%n",x/2,Math.log10(Math.abs(Math.sin(x * x) + 2.74D)));
             } else if (x / 2.0D > -1.0D && x / 2.0D < 0.2D) {
-                System.out.printf("При x/2=%.2f a = %e%n",x/2,Math.log10(Math.abs(Math.cos(Math.pow(x, 2.0D))) + 2.74D));
+                System.out.printf("При x/2=%.2f a = %e%n",x/2,Math.log10(Math.abs(Math.cos(x * x) + 2.74D)));
             } else if (x / 2.0D == 0.2D) {
                 System.out.printf("При x/2=%.2f a = %e%n",x/2,Math.log10(Math.abs(Math.pow(Math.tan(Math.pow(x, 2.0D)), -1.0D) + 2.74D)));
             } else {

@@ -1,29 +1,29 @@
 package by.it_academy.shalimov.jd01_05;
 
-import java.io.PrintStream;
+import static java.lang.Math.*;
 
 public class TaskA {
-    public TaskA() {
-    }
+
 
     public static void main(String[] args) {
-        PrintStream var10000 = System.out;
-        double var10001 = primer1();
-        var10000.println(var10001 + "\n" + primer2());
+
+
+        System.out.println(primer1());
+        System.out.println(primer2());
         primer3();
     }
 
     static double primer1() {
         double a = 756.13D;
         double x = 0.3D;
-        double z = Math.cos(Math.pow(Math.pow(x, 2.0D) + 0.5235987755982988D, 5.0D)) - Math.sqrt(x * Math.pow(a, 3.0D)) - Math.log10((a - 1.12D * x) / 4.0D);
+        double z = Math.cos(Math.pow(Math.pow(x, 2.0D) + (PI/6.0D), 5.0D)) - Math.sqrt(x * Math.pow(a, 3.0D)) - Math.log((a - 1.12D * x) / 4.0D);
         return z;
     }
 
     static double primer2() {
-        double a = 1.21D;
-        double b = 0.371D;
-        double y = Math.tan(Math.pow(a + b, 2.0D)) - Math.pow(a + 1.5D, 0.0D) + a * Math.pow(b, 5.0D) - b / Math.log10(Math.pow(a, 2.0D));
+        double a = 1.21;
+        double b = 0.371;
+        double y = Math.tan(Math.pow(a + b, 2.0D)) - Math.cbrt(a + 1.5D) + (a * Math.pow(b, 5.0D)) - (b / Math.log(Math.pow(a, 2.0D)));
         return y;
     }
 

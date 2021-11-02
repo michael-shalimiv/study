@@ -42,7 +42,7 @@ public class InOut {
 
     static void printArray(double[] array, String name, int columnCount) {
         for (int i = 0; i < array.length; ++i) {
-            System.out.printf("%s[% -3d]=%-10.4f ", name, i, array[i]);
+            System.out.printf("%s[% -3d]=%-10.5f ", name, i, array[i]);
             if ((i + 1) % columnCount == 0 || i == array.length - 1) {
                 System.out.println();
             }
